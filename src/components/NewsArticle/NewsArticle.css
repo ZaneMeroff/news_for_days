@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  color: white;
+}
+
+.news-article {
+  border: 2px solid red;
+  height: auto;
+  width: auto;
+}
+
+.news-image {
+  height: 200px;
+  width: 200px;
+}
