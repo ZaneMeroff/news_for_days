@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import NewsContainer from '../NewsContainer/NewsContainer';
+import NewsArticle from '../NewsArticle/NewsArticle';
 import local from '../../data/local';
 import './App.css';
 
@@ -13,7 +15,7 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        YOUR CODE GOES HERE!
+        <NewsContainer localNews={local}/>
       </div>
     );
   }
