@@ -1,13 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #FFFFFF;
-}
 
 .news-container {
+  margin-left: 15%;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background-image: url(../images/skyline_background.jpg); */
 }
