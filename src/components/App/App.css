@@ -7,7 +7,8 @@
 
 .app {
   display: flex;
-  background: #141527;
+  /* background-image: url(../images/city_background.jpg); */
+  background: #433399;
   /* height: 100vh; */
   text-align: center;
   width: 100%;

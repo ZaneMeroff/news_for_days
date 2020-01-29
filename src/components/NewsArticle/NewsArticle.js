@@ -1,12 +1,12 @@
 import React from 'react';
 import './NewsArticle.css';
 
-const NewsArticle = prop => {
+const NewsArticle = props => {
   return (
     <div className='news-article'>
-      <img className='news-image' src={prop.image}/>
-      <h1 className='news-headline'>{prop.headline}</h1>
-      <p className='news-description'>{prop.description}</p>
+      <img className='news-image' src={props.image}/>
+      <h1 className='news-headline'>{props.headline}</h1>
+      <p className='news-description'>{props.description}</p>
       <button className='read-article-button'>read article</button>
     </div>
   )
