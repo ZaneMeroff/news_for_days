@@ -1,15 +1,36 @@
 * {
-  margin: 0px;
-  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
 }
 
 .news-article {
   border: 2px solid red;
+  border-radius: 15px;
   height: auto;
-  width: auto;
+  width: 300px;
+  margin: 3%;
+  background-color: teal;
+  background-attachment: scroll;
 }
 
 .news-image {
   height: 200px;
   width: 200px;
+}
+
+.news-headline {
+  font-size: 110%;
+}
+
+.news-description {
+  font-size: 90%;
+}
+
+.read-article-button {
+  height: 30px;
+  width: 30%;
+  color: black;
+  background-color: white;
 }
