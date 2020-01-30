@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsContainer should be able to render news articles to page 1`] = `
+<article
+  className="news-container"
+>
+  <SearchForm
+    filterSearchResults={[MockFunction]}
+  />
+  <p
+    className="error-message"
+  >
+    sorry, your search did not return any results
+  </p>
+</article>
+`;

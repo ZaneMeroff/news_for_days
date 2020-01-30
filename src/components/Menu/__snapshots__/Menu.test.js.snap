@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should be able to render menu to page 1`] = `
+<nav>
+  <h1
+    className="logo-title"
+  >
+    Read all about it!
+  </h1>
+  <button
+    className="nav-button selected"
+    key="local"
+    onClick={[Function]}
+  >
+    LOCAL
+  </button>
+  <button
+    className="nav-button"
+    key="health"
+    onClick={[Function]}
+  >
+    HEALTH
+  </button>
+  <button
+    className="nav-button"
+    key="entertainment"
+    onClick={[Function]}
+  >
+    ENTERTAINMENT
+  </button>
+  <button
+    className="nav-button"
+    key="science"
+    onClick={[Function]}
+  >
+    SCIENCE
+  </button>
+  <button
+    className="nav-button"
+    key="technology"
+    onClick={[Function]}
+  >
+    TECHNOLOGY
+  </button>
+</nav>
+`;
