@@ -1,15 +1,19 @@
 * {
   box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: arial;
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
 }
 
 .app {
-  display: flex;
-  /* background-image: url(../images/city_background.jpg); */
   background: #433399;
-  /* height: 100vh; */
+  display: flex;
   text-align: center;
   width: 100%;
+}
+
+#root {
+  background-color: #433399;
+  height: 100vh;
 }
