@@ -5,6 +5,7 @@ import SearchForm from '../SearchForm/SearchForm';
 import './NewsContainer.css';
 
 const NewsContainer = ( {news, filterSearchResults} ) => {
+
   return (
     <article className='news-container'>
       <SearchForm filterSearchResults={filterSearchResults}/>
@@ -16,9 +17,9 @@ const NewsContainer = ( {news, filterSearchResults} ) => {
           headline={article.headline}
           description={article.description}
           url={article.url}
-          key={Math.random()}
+          key={article.id}
         />
-        ))
+      ))
       }
     </article>
   );

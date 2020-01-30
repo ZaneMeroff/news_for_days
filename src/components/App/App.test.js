@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
 import App from './App';
-
+import local from '../../data/local';
+import health from '../../data/health';
+import entertainment from '../../data/entertainment';
+import science from '../../data/science';
+import technology from '../../data/technology';
+import { shallow } from 'enzyme';
 
 describe('App', () => {
 
@@ -12,35 +16,15 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  
-
-});
-
-
-
-describe('Card', () => {
-  it ('renders the title of the idea in an <h3> tag', () => {
-    const wrapper = shallow(<Card
-      title='Bananas'
-      id={5}
-      description='yellow fruit'
-      removeIdea={jest.fn()}
-      />)
-
+  it('should be able to render app', () => {
+    const wrapper = shallow(<App />)
     expect(wrapper).toMatchSnapshot();
-    // expect(wrapper.contains(title)).toEqual(true);
+  });
+
+  it('setNewsType should update state', () => {
+    const wrapper = shallow(<App />)
+    wrapper.instance().setNewsType('health')
+    expect(wrapper.state('data')).toEqual(health)
   });
 
 });
-
-
-describe('Idea', () => {
-  it ('renders the idea', () => {
-    const wrapper = shallow(<Ideas
-      ideas={[{id: 5, title: 'Cat', description: 'meow' },
-              {id: 2, title: 'Dog', description: 'woof' }]}
-      removeIdea={jest.fn()}
-    />)
-    expect(wrapper).toMatchSnapshot();
-  })
-})
