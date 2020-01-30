@@ -12,18 +12,19 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = {data: local}
+    this.state = {data: local, newsType: 'local'}
+    this.allData = {local, health, entertainment, science, technology};
   }
 
-  setNewsType(newsType) {
-    this.setState( {data: newsType} );
+  setNewsType = newsType => {
+    this.setState( {data: this.allData[newsType], newsType: newsType} );
   }
 
   render() {
     return (
       <div className="app">
-        <Menu setNewsType={this.setNewsType}/>
-        <NewsContainer localNews={local}/>
+        <Menu setNewsType={this.setNewsType} selectedNewsType={this.state.newsType}/>
+        <NewsContainer news={this.state.data}/>
       </div>
     );
   }
