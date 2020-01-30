@@ -4,12 +4,13 @@ import App from '../App/App.js';
 import SearchForm from '../SearchForm/SearchForm';
 import './NewsContainer.css';
 
-const NewsContainer = props => {
+const NewsContainer = ({news}) => {
+  console.log(typeof news);
   return (
     <div className='news-container'>
       <SearchForm />
       {
-        props.localNews.map(article => (
+        news.map(article => (
         <NewsArticle
           image={article.img}
           headline={article.headline}
