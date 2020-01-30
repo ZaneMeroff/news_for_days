@@ -1,15 +1,17 @@
 import React from 'react';
 import './NewsArticle.css';
 
-const NewsArticle = ({image, headline, description, url}) => {
+const NewsArticle = ( {image, headline, description, url} ) => {
   return (
     <div className='news-article'>
       <img className='news-image' src={image}/>
       <h1 className='news-headline'>{headline}</h1>
       <p className='news-description'>{description}</p>
-      <a href={url} target='_blank' className='read-article-button'>read article</a>
+      <button className='read-article-button'>
+        <a href={url} target='_blank' >read article</a>
+      </button>
     </div>
-  )
+  );
 }
 
 export default NewsArticle;

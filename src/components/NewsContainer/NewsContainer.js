@@ -4,11 +4,11 @@ import App from '../App/App.js';
 import SearchForm from '../SearchForm/SearchForm';
 import './NewsContainer.css';
 
-const NewsContainer = ({news, filterSearchResults}) => {
+const NewsContainer = ( {news, filterSearchResults} ) => {
   return (
-    <div className='news-container'>
+    <article className='news-container'>
       <SearchForm filterSearchResults={filterSearchResults}/>
-      { news.length === 0 ? <div>no results found</div> : '' }
+      {news.length === 0 ? <p className='error-message'>sorry, your search did not return any results</p> : ''}
       {
         news.map(article => (
         <NewsArticle
@@ -19,8 +19,8 @@ const NewsContainer = ({news, filterSearchResults}) => {
         />
         ))
       }
-    </div>
-  )
+    </article>
+  );
 }
 
 export default NewsContainer;
