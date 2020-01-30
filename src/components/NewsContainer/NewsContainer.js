@@ -16,6 +16,7 @@ const NewsContainer = ( {news, filterSearchResults} ) => {
           headline={article.headline}
           description={article.description}
           url={article.url}
+          key={Math.random()}
         />
         ))
       }

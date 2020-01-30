@@ -14,7 +14,7 @@ const Menu = ({setNewsType, selectedNewsType}) => {
       <h1 className='logo-title'>Read all about it!</h1>
       {newsTypes.map(news => {
        return (
-         <button className={news === selectedNewsType ? 'nav-button selected' : 'nav-button'} onClick={() => selectNewsType(news)}>{news.toUpperCase()}</button>
+         <button key={Math.random()} className={news === selectedNewsType ? 'nav-button selected' : 'nav-button'} onClick={() => selectNewsType(news)}>{news.toUpperCase()}</button>
        )
       })}
     </nav>
