@@ -8,7 +8,7 @@ class SearchForm extends Component {
   }
 
   onSearchChange = event => {
-    this.setState({query: event.target.value})
+    this.setState({query: event.target.value});
   }
 
   render() {
@@ -17,9 +17,8 @@ class SearchForm extends Component {
      <input className='search-input' onChange={this.onSearchChange} placeholder='search for articles here...'></input>
      <button onClick={() => this.props.filterSearchResults(this.state.query)} className='search-button'>search</button>
     </section>
-    )
+    );
   }
-
 }
 
 export default SearchForm;
