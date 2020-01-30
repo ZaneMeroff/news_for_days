@@ -24,6 +24,11 @@ nav {
   height: 30px;
 }
 
+.nav-button.selected {
+  background-color: #82c6ff;
+  border: 2px solid #e85a5a;
+}
+
 .nav-button:hover {
   cursor: pointer;
   transform: scale(1.08);
