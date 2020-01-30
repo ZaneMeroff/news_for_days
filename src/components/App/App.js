@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = {data: local, filtered: local, newsType: 'local'}
+    this.state = {data: local, filtered: local, newsType: 'local'};
     this.allData = {local, health, entertainment, science, technology};
   }
 
@@ -23,8 +23,8 @@ class App extends Component {
   filterSearchResults = query => {
     const filteredData = this.state.data.filter(newsArticle => {
       return newsArticle.headline.toLowerCase().includes(query.toLowerCase()) || newsArticle.description.toLowerCase().includes(query.toLowerCase());
-    })
-    this.setState({filtered: filteredData})
+    });
+    this.setState({filtered: filteredData});
   }
 
   render() {
